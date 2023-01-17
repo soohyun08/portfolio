@@ -1,0 +1,38 @@
+@import "../assets/style/variable.scss";
+
+.navigation {
+  display: flex;
+  transform: rotate(270deg);
+  position: fixed;
+  top: 45vh;
+  left: 7.45vw;
+
+  .navBtn {
+    position: relative;
+    &.on svg path {
+      z-index: 999;
+      stroke: #000;
+    }
+    &.on svg {
+      border-bottom: 1px solid #ffcb22;
+    }
+    svg {
+      border-bottom: 1px solid #000;
+    }
+    svg path {
+      fill: #ffcb22;
+    }
+    a {
+      font-size: 1.1em;
+      width: 120px;
+      text-align: center;
+      padding: 10px 0;
+      text-decoration: none;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: $centerTrans;
+    }
+  }
+}
