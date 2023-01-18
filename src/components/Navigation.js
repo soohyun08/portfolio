@@ -17,6 +17,7 @@ function Navigation() {
 
   return (
     <nav className="navigation">
+      {/* js 이벤트 3event Ex7 참고 */}
       <div className="navBtn navBtn1" onClick={click1}>
         <svg
           width="161"

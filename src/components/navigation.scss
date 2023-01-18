@@ -14,13 +14,13 @@
       stroke: #000;
     }
     &.on svg {
-      border-bottom: 1px solid #ffcb22;
+      border-bottom: 1px solid $bgColorYellow;
     }
     svg {
       border-bottom: 1px solid #000;
     }
     svg path {
-      fill: #ffcb22;
+      fill: $bgColorYellow;
     }
     a {
       font-size: 1.1em;

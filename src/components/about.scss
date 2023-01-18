@@ -1,0 +1,64 @@
+.about {
+  .intoduce {
+    border-top: 1px solid #fff;
+    display: flex;
+    margin-bottom: 10vh;
+    img {
+      width: 240px;
+      height: 320px;
+      border: 1px solid #fff;
+    }
+    .txt {
+      padding: 3vw;
+      h2 {
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      .connect {
+        border: none;
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 1em;
+        font-family: "Pretendard";
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .skill {
+    border: 1px dotted tomato;
+    margin-bottom: 10vh;
+    section {
+      display: flex;
+      padding: 10px 30px;
+      h3 {
+        svg {
+          width: 70px;
+        }
+      }
+      ul {
+        padding: 1vw;
+        li {
+        }
+      }
+    }
+  }
+  .contact {
+    border: 1px dotted tomato;
+    // color: rgb(28, 52, 104);
+    h4,
+    h5 {
+      font-size: 60px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.1;
+      font-family: "DM Serif Display", serif;
+    }
+    h5 {
+      text-transform: none;
+    }
+  }
+}

@@ -1,9 +1,13 @@
-import React from "react";
+import "./footer.scss";
 
-function Footer(props) {
+function Footer() {
   return (
-    <footer>
-      <h2>footer</h2>
+    <footer className="footer">
+      <div className="resume">RESUME</div>
+      <div className="footerImg">이미지 로고</div>
+      <div className="copyRight">
+        copyright&copy; 2023 All rights reserved by SOOHYUN KIM.
+      </div>
     </footer>
   );
 }

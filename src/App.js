@@ -14,6 +14,7 @@ import NotFoundPage from "./components/NotFoundPage";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import ProjectsSub1 from "./components/ProjectsSub1";
+import ProjectsSub2 from "./components/ProjectsSub2";
 
 // style
 import "./assets/style/style.scss";
@@ -28,7 +29,8 @@ function App() {
 
         <Route path="/projects">
           <Route index element={<Projects />} />
-          <Route path=":Sub1" element={<ProjectsSub1 />} />
+          <Route path=":sub1" element={<ProjectsSub1 />} />
+          <Route path=":sub2" element={<ProjectsSub2 />} />
         </Route>
 
         <Route path="/about" element={<About />} />
