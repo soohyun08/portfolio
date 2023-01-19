@@ -8,8 +8,8 @@ function Projects() {
   return (
     <div className="wrapper projects">
       <Greeting />
-      <Navigation />
-      <h2 className="headline">Projects / works</h2>
+      {/* <Navigation /> */}
+      <h2 className="headline">Projects</h2>
 
       {data.map((item) => (
         <ProjectsInner key={item.id} item={item} />

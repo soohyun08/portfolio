@@ -1,17 +1,13 @@
-import React from "react";
+import "./greeting.scss";
 
-function Greeting(props) {
+function Greeting() {
   return (
     <div className="greeting">
-      <p>
-        뜨고, 스며들어 인생의 때문이다. 풀밭에 싶이 타오르고 귀는 역사를 새가
-        있는 커다란 피다.
-      </p>
-      <h2>greeting ...</h2>
-      <p>
-        뜨고, 스며들어 인생의 때문이다. 풀밭에 싶이 타오르고 귀는 역사를 새가
-        있는 커다란 피다.
-      </p>
+      <p className="firstTxt">A Designer who</p>
+      <h2>
+        Judges a book <br /> by its cover
+      </h2>
+      <p>Because if the cover does not impress you what else can?</p>
     </div>
   );
 }

@@ -1,26 +1,35 @@
 @import "../assets/style/variable.scss";
 
 .navigation {
-  display: flex;
-  transform: rotate(270deg);
-  position: fixed;
-  top: 45vh;
-  left: 7.45vw;
-
+  position: relative;
+  width: 45px;
   .navBtn {
-    position: relative;
-    &.on svg path {
-      z-index: 999;
-      stroke: #000;
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 150px;
+
+    a {
+      transform: rotate(270deg);
+      background: url(../assets/images/tab-bg-default.svg) no-repeat 50% / cover;
+      width: 150px;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      text-align: center;
+      background-color: orange;
     }
-    &.on svg {
-      border-bottom: 1px solid $bgColorYellow;
-    }
-    svg {
-      border-bottom: 1px solid #000;
-    }
-    svg path {
-      fill: $bgColorYellow;
+  }
+}
+/* 
+.navigation {
+  .navBtn {
+    transform: rotate(270deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    &:nth-child(2) {
+      top: -17vh;
     }
     a {
       font-size: 1.1em;
@@ -33,6 +42,15 @@
       top: 50%;
       left: 50%;
       transform: $centerTrans;
+      background-color: orange;
+      svg {
+        position: absolute;
+        border-bottom: 1px solid #000;
+      }
+      svg path {
+        fill: $bgColorYellow;
+      }
     }
   }
 }
+ */

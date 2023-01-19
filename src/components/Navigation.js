@@ -3,23 +3,16 @@ import { useState } from "react";
 import "./navigation.scss";
 
 function Navigation() {
-  const navBtn1 = document.querySelectorAll(".navBtn1");
-  const navBtn2 = document.querySelectorAll(".navBtn2");
-
-  const click1 = () => {
-    navBtn1.classlist.add("on");
-    navBtn2.classlist.remove("on");
-  };
-  const click2 = () => {
-    navBtn2.classlist.add("on");
-    navBtn1.classlist.remove("on");
-  };
+  const [tab, setTab] = useState(0);
 
   return (
     <nav className="navigation">
       {/* js 이벤트 3event Ex7 참고 */}
-      <div className="navBtn navBtn1" onClick={click1}>
-        <svg
+      <div
+        className={`navBtn ${tab === 0 ? "on" : null}`}
+        onClick={() => setTab(0)}
+      >
+        {/* <svg
           width="161"
           height="57"
           fill="none"
@@ -40,11 +33,15 @@ function Navigation() {
               />
             </clipPath>
           </defs>
-        </svg>
+        </svg> */}
         <Link to="/">Projects</Link>
       </div>
-      <div className="navBtn navBtn2" onClick={click2}>
-        <svg
+
+      <div
+        className={`navBtn ${tab === 1 ? "on" : null}`}
+        onClick={() => setTab(1)}
+      >
+        {/* <svg
           width="161"
           height="57"
           fill="none"
@@ -65,7 +62,7 @@ function Navigation() {
               />
             </clipPath>
           </defs>
-        </svg>
+        </svg> */}
         <Link to="/about">About Me</Link>
       </div>
     </nav>

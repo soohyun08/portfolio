@@ -30,9 +30,7 @@ function About() {
             영락과 피고, 풀이 있으랴? 것은 열락의 인간의 있으랴? 미인을 때까지
             아름답고 간에 황금시대다.
           </p>
-          <button type="submit" className="connect">
-            let's connect
-          </button>
+          <button className="connect">let's connect</button>
         </div>
       </div>
 
@@ -40,11 +38,11 @@ function About() {
         <h3>skill</h3>
         {data.map((item) => (
           <section key={item.id}>
-            <h3>
+            <h4>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox={item.viewBox}>
                 <path d={item.path} />
               </svg>
-            </h3>
+            </h4>
             <ul>
               <li>{item.des}</li>
             </ul>

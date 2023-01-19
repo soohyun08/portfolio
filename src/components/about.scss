@@ -25,16 +25,27 @@
         font-family: "Pretendard";
         font-weight: 600;
         text-transform: capitalize;
+        background-color: #ddd;
+        transition: 0.4s;
+        &:hover {
+          cursor: pointer;
+          background-color: #222;
+          color: #fff;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+        }
       }
     }
   }
   .skill {
-    border: 1px dotted tomato;
     margin-bottom: 10vh;
+    h3 {
+      font-size: 40px;
+      font-weight: 800;
+    }
     section {
       display: flex;
       padding: 10px 30px;
-      h3 {
+      h4 {
         svg {
           width: 70px;
         }
@@ -47,8 +58,6 @@
     }
   }
   .contact {
-    border: 1px dotted tomato;
-    // color: rgb(28, 52, 104);
     h4,
     h5 {
       font-size: 60px;
