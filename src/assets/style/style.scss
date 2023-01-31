@@ -18,35 +18,34 @@
   } */
 
 // 스타일
-body {
+body,
+.header,
+.footer {
   font-family: $pretendard;
   line-height: 1.5;
-  text-transform: capitalize;
-  // background-color: #000;
+  text-transform: $bodyBlack;
 }
 .wrapper {
-  width: 65vw;
-  background-color: $bgColorYellow;
-  padding: 70px;
-  border-radius: 20px;
-  border: #000 solid 1px;
+  margin: 0 auto;
+  width: 60vw;
+  background-color: $bgColorBlack;
+  padding: 100px;
+  border-radius: 40px;
+  border: #fff solid 1px;
 }
 a {
   display: block;
-}
-
-.greeting {
-  font-size: 56px;
-  font-weight: 800;
-  height: 40vh;
-  border: 2px dotted #000;
-  margin-bottom: 3vh;
-  p {
-    font-size: 16px;
-  }
+  text-decoration: none;
 }
 .headline {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 50px;
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 7vh;
+  background: url(../images/yellow-circle.png) $bgContain;
+  width: 250px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
 }

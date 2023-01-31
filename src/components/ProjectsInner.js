@@ -1,17 +1,11 @@
 import { Link } from "react-router-dom";
+import "./projectsInner.scss";
 
 function ProjectsInner({ item }) {
   const path = process.env.PUBLIC_URL;
 
   return (
-    <Link to={`/projects/sub + ${item.id}`} className="projectsInner">
-      <div className="arrowDown">
-        <p>more</p>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-          <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
-        </svg>
-      </div>
-
+    <Link to={`/sub + ${item.id}`} className="projectsInner">
       <h3 className="siteLogo">
         <img src={path + item.logoImg} alt={item.name} />
       </h3>
@@ -24,15 +18,10 @@ function ProjectsInner({ item }) {
 
       <div className="txt">
         <p>
-          <strong>주요 기능: </strong>
-          {item.des}
+          [ {item.device} ] {item.tool}
         </p>
-        <p className="projectInnerURL">
-          <strong>URL:</strong>
-          <a href={item.url} target="_blank">
-            {item.url}
-          </a>
-        </p>
+        <p className="projectInnerURL">// {item.team}</p>
+        {item.role}
       </div>
     </Link>
   );

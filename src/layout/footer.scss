@@ -1,30 +1,42 @@
 @import "../assets/style/variable.scss";
 
 .footer {
-  width: 65vw;
-  height: 20vh;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: center;
-  .resume {
-    background: #222 url(../assets/images/download.png) no-repeat 50% / cover;
-    width: 100px;
-    height: 70px;
-    line-height: 70px;
-    color: #fff;
-  }
-  .footerImg {
-    background-color: salmon;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    font-size: 14px;
-  }
-  .copyRight {
-    background-color: #fff;
-    width: 250px;
-    height: 70px;
+  background-color: $bodyBlack;
+  width: 100%;
+  height: 30vh;
+  .footerWrapper {
+    width: 65vw;
+    margin: 0 auto;
+    padding-top: 17vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    .resume {
+      background: #222 url(../assets/images/download.png) no-repeat 50% / cover;
+      width: 100px;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      color: #fff;
+    }
+    .footerImg {
+      width: 70px;
+      height: 70px;
+      margin: 0 20px;
+    }
+    .footerTxt {
+      text-align: left;
+      font-size: 0.8em;
+      .caution {
+        background-color: $colorLightGreen;
+        padding: 3px 10px;
+      }
+      .copyRight {
+        background-color: #fff;
+        color: #000;
+        line-height: 1.2;
+        padding: 4px 10px;
+      }
+    }
   }
 }

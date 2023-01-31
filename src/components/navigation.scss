@@ -2,55 +2,25 @@
 
 .navigation {
   position: relative;
-  width: 45px;
-  .navBtn {
-    position: sticky;
-    top: 0;
-    right: 0;
-    width: 150px;
+  margin: 80px 0;
+  width: 62px;
 
-    a {
-      transform: rotate(270deg);
-      background: url(../assets/images/tab-bg-default.svg) no-repeat 50% / cover;
-      width: 150px;
-      height: 45px;
-      line-height: 45px;
-      color: #fff;
-      text-align: center;
-      background-color: orange;
-    }
-  }
-}
-/* 
-.navigation {
-  .navBtn {
-    transform: rotate(270deg);
-    position: absolute;
-    top: 0;
+  .btnContainer {
+    position: sticky;
+    top: 50px;
     left: 0;
-    &:nth-child(2) {
-      top: -17vh;
-    }
-    a {
-      font-size: 1.1em;
-      width: 120px;
-      text-align: center;
-      padding: 10px 0;
-      text-decoration: none;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: $centerTrans;
-      background-color: orange;
-      svg {
-        position: absolute;
-        border-bottom: 1px solid #000;
-      }
-      svg path {
-        fill: $bgColorYellow;
+    // border: 1px red solid;
+    .bg {
+      // border: 1px teal solid;
+      width: 64px;
+      height: 194px;
+      display: grid;
+      place-content: center;
+      background: url("../assets/images/bgTag.png") no-repeat 0 0;
+      span {
+        transform: rotate(270deg);
+        font-size: 0.8em;
       }
     }
   }
 }
- */
