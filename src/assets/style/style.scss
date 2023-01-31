@@ -27,10 +27,10 @@ body,
 }
 .wrapper {
   margin: 0 auto;
-  width: 60vw;
+  width: 1060px;
   background-color: $bgColorBlack;
   padding: 100px;
-  border-radius: 40px;
+  border-radius: 20px;
   border: #fff solid 1px;
 }
 a {
@@ -38,13 +38,13 @@ a {
   text-decoration: none;
 }
 .headline {
-  font-size: 46px;
+  font-size: 42px;
   font-weight: 600;
   margin-bottom: 7vh;
   background: url(../images/yellow-circle.png) $bgContain;
-  width: 250px;
-  height: 120px;
-  line-height: 120px;
+  width: 170px;
+  height: 80px;
+  line-height: 80px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;

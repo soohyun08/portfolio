@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./projectsInner.scss";
 
 function ProjectsInner({ item }) {
   const path = process.env.PUBLIC_URL;
+  // const { id, name, img, device, team, tool, role, logoImg } = item;
 
   return (
-    <Link to={`/sub + ${item.id}`} className="projectsInner">
+    <NavLink to={`/sub${item.id}`} className="projectsInner">
       <h3 className="siteLogo">
         <img src={path + item.logoImg} alt={item.name} />
       </h3>
@@ -20,10 +21,10 @@ function ProjectsInner({ item }) {
         <p>
           [ {item.device} ] {item.tool}
         </p>
-        <p className="projectInnerURL">// {item.team}</p>
+        <p>// {item.team}</p>
         {item.role}
       </div>
-    </Link>
+    </NavLink>
   );
 }
 

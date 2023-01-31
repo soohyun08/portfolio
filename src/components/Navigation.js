@@ -1,7 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import "./navigation.scss";
-// import "../assets/style.scss";
 
 function onDeco({ isActive }) {
   return {

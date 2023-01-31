@@ -2,7 +2,7 @@
 
 .goSite {
   position: absolute;
-  bottom: -100px;
+  bottom: -90px;
   right: 40px;
   overflow: hidden;
   width: 80px;
@@ -12,7 +12,5 @@
   border: 2px solid #fff;
   font-size: 1.3em;
   background-color: $bgColorBlack;
-  a {
-    width: 200px;
-  }
+  cursor: pointer;
 }

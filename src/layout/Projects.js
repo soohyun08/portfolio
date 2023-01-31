@@ -9,6 +9,7 @@ import "./projects.scss";
 // img
 import hand from "../assets/images/waving-hand.png";
 import pinkSparkling from "../assets/images/pink-sparkling.png";
+import Hello from "./Hello";
 
 function Projects() {
   return (
@@ -18,10 +19,8 @@ function Projects() {
         <div className="wrapper">
           <div className="greeting">
             <h1>
-              <strong>
-                반갑습니다!
-                {/* <img src={hand} alt="흔드는 손" /> */}
-              </strong>
+              {/* <Hello /> */}
+              <strong>반갑습니다!</strong>
               사용자의 편의와 깔끔한 코드를 <br />
               추구하는 프론트엔드 개발자, <br />
               김수현입니다.

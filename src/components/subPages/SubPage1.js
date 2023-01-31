@@ -1,35 +1,35 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
+import MainPicSwiper from "./MainPicSwiper";
 import GoUp from "../GoUp";
 // 디자인
 import "./subpage.scss";
+import "./subPage1.scss";
 // 이미지
 import pinkSparkling from "../../assets/images/pink-sparkling.png";
 import GoSite from "./GoSite";
 
 function SubPage1() {
-  const { sub1 } = useParams();
   const navi = useNavigate();
 
   const goPrev = () => {
     navi("/");
   };
+  const path = process.env.PUBLIC_URL;
 
   return (
     <div className="subPage">
-      <div className="wrapper ">
+      <div className="wrapper sub1">
         <div className="prevBtn">
           <button onClick={goPrev}>
             <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
               <path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z" />
             </svg>
           </button>
-          <div className="num">NUM1</div>
+          <div className="num">NUM 1</div>
         </div>
 
-        <div className="mainPic">
-          <img src="" alt="" />
-        </div>
+        <MainPicSwiper />
 
         <section>
           <div className="title">

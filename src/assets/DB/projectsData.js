@@ -17,6 +17,14 @@ export default [
     tool: "React",
     team: "Personal project",
   },
-  /* { id: 3 , name: , logoImg:, img: , des: , url: },
-      { id: 4 , name: , logoImg:, img: , des: , url: }, */
+  {
+    id: 3,
+    name: "JoinUs",
+    logoImg: "",
+    img: "",
+    device: "WEB",
+    tool: "React",
+    team: "Personal project",
+  },
+  //  { id: 4 , name:" JoinUs" , logoImg:"", img: "", device:"" , tool:"", team: "",},
 ];

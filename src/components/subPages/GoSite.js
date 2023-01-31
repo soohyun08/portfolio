@@ -1,31 +1,18 @@
+import Marquee from "react-fast-marquee";
 import "./goSite.scss";
 
 function GoSite() {
-  const tag = document.querySelector("parallel");
-  const textArr = "Go see the site".split(" ");
-  let count = 0;
-
-  initTexts(tag, textArr);
-
-  function initTexts(element, textArray) {
-    textArray.push(...textArray);
-    for (let i = 0; i < textArray.length; i++) {
-      element += `${textArray[i]}\u00A0\u00A0\u00A0\u00A0`;
-    }
-  }
-
-  function animate() {
-    count++;
-
-    window.requestAnimationFrame(animate);
-  }
-  animate();
-
+  const url = "https://teamproject-no-2.github.io/dragonz/";
   return (
-    <div>
-      <div className="goSite cover">
-        <a href="" target="_blank" className="parallel"></a>
-      </div>
+    <div
+      className="goSite cover"
+      onClick={() => {
+        window.open(url);
+      }}
+    >
+      <Marquee loop={0} gradient={false}>
+        o see the site Go see the site G
+      </Marquee>
     </div>
   );
 }

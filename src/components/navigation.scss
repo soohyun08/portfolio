@@ -9,9 +9,7 @@
     position: sticky;
     top: 50px;
     left: 0;
-    // border: 1px red solid;
     .bg {
-      // border: 1px teal solid;
       width: 64px;
       height: 194px;
       display: grid;
@@ -19,7 +17,8 @@
       background: url("../assets/images/bgTag.png") no-repeat 0 0;
       span {
         transform: rotate(270deg);
-        font-size: 0.8em;
+        font-size: 14px;
+        // border: 1px teal solid;
       }
     }
   }
