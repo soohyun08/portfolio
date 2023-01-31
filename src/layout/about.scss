@@ -1,0 +1,112 @@
+@import "../assets/style/variable.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+.tabContainer {
+  background-color: $bodyBlack;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  background-color: $bodyBlack;
+  .intoduce {
+    margin: 0 60px;
+    border-top: 1px solid #fff;
+    display: flex;
+    margin-bottom: 10vh;
+    img {
+      width: 240px;
+      height: 320px;
+      border: 1px solid #fff;
+    }
+    .txt {
+      padding: 3vh 0 0 2vw;
+      p {
+        color: #ddd;
+        margin-bottom: 20px;
+        font-size: 22px;
+        word-break: keep-all;
+      }
+      .tag {
+        color: #efefef;
+        span {
+          font-weight: 200;
+          font-size: 1em;
+          margin-right: 20px;
+        }
+      }
+
+      .connect {
+        margin-top: 20px;
+        border: none;
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 1em;
+        font-family: "Pretendard";
+        font-weight: 500;
+        text-transform: capitalize;
+        background-color: rgb(145, 145, 145);
+        // filter: opacity(0.3);
+        color: #222;
+        transition: 0.4s;
+        &:hover {
+          filter: none;
+          // border: 1px solid #fff;
+          cursor: pointer;
+          background-color: #222;
+          color: #fff;
+          box-shadow: rgba(235, 235, 235, 0.35) 0px 1px 10px;
+        }
+      }
+    }
+  }
+  .skill {
+    margin: 20vh 0;
+    h2 {
+      margin: 0 auto;
+      position: relative;
+      img {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+      }
+    }
+    section {
+      display: flex;
+      color: #fff;
+      align-items: flex-end;
+      // background-color: teal;
+      margin: 15vh 0;
+      h4 {
+        text-indent: 10px;
+        border-bottom: 1px solid #fff;
+        width: 350px;
+        margin-right: 5vw;
+        font-size: 22px;
+        font-weight: 300;
+      }
+
+      li {
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+  }
+  .contact {
+    h4,
+    h5 {
+      font-size: 4vw;
+      text-transform: uppercase;
+      line-height: 1.2;
+      font-family: $cafe24;
+      color: $colorLightGreen;
+    }
+    h5 {
+      text-transform: none;
+      font-size: 3vw;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../assets/style/variable.scss";
+
+.header {
+  background-color: $bodyBlack;
+  h1 {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 80px 0 60px;
+    a {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 180px;
+      }
+    }
+  }
+}

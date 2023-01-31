@@ -1,0 +1,54 @@
+@import "../assets/style/variable.scss";
+
+.notFoundPage {
+  font-size: 1.3em;
+  color: #fff;
+  height: 70vh;
+  margin: 0 auto;
+  position: relative;
+
+  .circleWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h2 {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transform: translate(-50%, -50);
+    z-index: 1;
+  }
+
+  div {
+    position: absolute;
+    width: 320px;
+    height: 340px;
+    mix-blend-mode: multiply;
+  }
+
+  /* Circles */
+  .circle-1 {
+    background: #f66;
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+    animation: border-animation 6s infinite linear;
+  }
+  .circle-2 {
+    background: #f92;
+    border-radius: 80% 30% 50% 50%/50%;
+    animation: border-animation 4s infinite linear;
+  }
+  .circle-3 {
+    background: #fc2;
+    border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+    animation: border-animation 8s infinite linear;
+  }
+
+  /* Animation */
+  @keyframes border-animation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

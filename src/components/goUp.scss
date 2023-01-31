@@ -1,0 +1,29 @@
+@import "../assets/style/variable.scss";
+
+.goUpBtn {
+  position: fixed;
+  bottom: 7vh;
+  right: 10px;
+  margin-left: auto;
+  margin-right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid $bgColorBlack;
+  cursor: pointer;
+  transition: 0.3s;
+
+  opacity: 0;
+  pointer-events: none;
+  svg {
+    transform: rotate(90deg);
+  }
+  &.on {
+    opacity: 0.5;
+    pointer-events: all;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}

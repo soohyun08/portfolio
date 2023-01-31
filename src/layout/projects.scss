@@ -1,0 +1,40 @@
+@import "../assets/style/variable.scss";
+
+.tabContainer {
+  background-color: $bodyBlack;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.projects {
+  background-color: $bodyBlack;
+  .greeting {
+    padding: 3vh 3vw;
+    padding-bottom: 20vh;
+    h1 {
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1.4;
+      strong {
+        font-size: 60px;
+        font-weight: 600;
+        color: $colorPink;
+        display: block;
+        img {
+          margin-left: 20px;
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  h2 {
+    position: relative;
+    img {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+    }
+  }
+}

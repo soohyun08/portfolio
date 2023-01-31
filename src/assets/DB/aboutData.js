@@ -1,0 +1,48 @@
+export default [
+  {
+    id: 1,
+    name: "HTML5 / CSS3",
+    des1: "- 웹 사이트 구축 및 디자인",
+    des2: "- 웹 표준과 웹 접근성을 고려하여 시멘틱 태그를 이용한 마크업",
+    des3: "- Flex, Grid, Position을 이용한 레이아웃 구현",
+    des4: "- CSS Animation을 활용한 모션 구현",
+    des5: "- Media Query를 이용한 반응형 웹 제작 ",
+  },
+  {
+    id: 2,
+    name: "JavaScript (ES6+)",
+    des1: "- 웹 사이트 구현",
+    des2: "- 이벤트 메소드 구현",
+    des3: "- 자바스크립트 기본 문법 이해",
+    des4: "- Swiper 사용",
+  },
+  {
+    id: 3,
+    name: "React",
+    des1: "- router 사용",
+    des2: "- useState, useEffect, useRef 등의 훅 사용",
+    des3: "- axios를 이용한 데이터 가져오기",
+    des4: "- styled-components와 scss을 사용한 디자인",
+    des5: "- 계속 공부 중",
+  },
+  {
+    id: 4,
+    name: "Git / GitHub",
+    des1: "- 프로젝트 공유 및 협업",
+    des2: "- 진행 사항 실시간 공유 및 수정",
+    des3: " - github를 이용한 배포",
+  },
+  {
+    id: 5,
+    name: "Illustrator / Photoshop / Figma",
+    des1: "- 팬툴을 이용한 아이콘 제작",
+    des2: "- 이미지 편집",
+  },
+  {
+    id: 6,
+    name: "Others",
+    des1: "ㅁㄴ암러;ㅣㅁ123",
+    des2: "ㅁㄴ암러;ㅣㅁ123",
+    des3: "ㅁㄴ암러;ㅣㅁ123",
+  },
+];

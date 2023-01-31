@@ -1,0 +1,28 @@
+.footer {
+  width: 65vw;
+  height: 20vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: center;
+}
+.footer .resume {
+  background: #222 url(../assets/images/download.png) no-repeat 50%/cover;
+  width: 100px;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+}
+.footer .footerImg {
+  background-color: salmon;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 14px;
+}
+.footer .copyRight {
+  background-color: #fff;
+  width: 250px;
+  height: 70px;
+}
