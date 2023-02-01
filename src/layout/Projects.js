@@ -7,9 +7,7 @@ import data from "../assets/DB/projectsData";
 // 디자인
 import "./projects.scss";
 // img
-import hand from "../assets/images/waving-hand.png";
 import pinkSparkling from "../assets/images/pink-sparkling.png";
-import Hello from "./Hello";
 
 function Projects() {
   return (
@@ -19,10 +17,9 @@ function Projects() {
         <div className="wrapper">
           <div className="greeting">
             <h1>
-              {/* <Hello /> */}
               <strong>반갑습니다!</strong>
               사용자의 편의와 깔끔한 코드를 <br />
-              추구하는 프론트엔드 개발자, <br />
+              추구하는 <em>프론트엔드 개발자</em> , <br />
               김수현입니다.
             </h1>
           </div>

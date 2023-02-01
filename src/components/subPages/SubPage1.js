@@ -92,14 +92,7 @@ function SubPage1() {
         </div>
 
         <div className="learned">
-          <h3 className="subHeadline">
-            what i learned
-            <img
-              src={pinkSparkling}
-              alt="핑크색 빤작이"
-              className="pinkSparkling"
-            />
-          </h3>
+          <h3 className="subHeadline">what i learned</h3>
           <ol>
             <li>
               것은 품고 고행을 별과 풍부하게 뜨거운지라, 많이 황금시대를 듣는다.

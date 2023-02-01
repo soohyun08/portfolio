@@ -9,22 +9,17 @@
     position: relative;
 
     .subHeadline {
-      font-size: 38px;
+      font-size: 34px;
       font-weight: 800;
-      background: url(../../assets/images/yellow-circle.png) no-repeat 50% /
-        220px;
-      height: 110px;
-      line-height: 110px;
+      background: url(../../assets/images/yellow-circle.png) no-repeat 50%;
+      width: 200px;
+      height: 90px;
+      line-height: 90px;
       text-align: center;
       text-transform: capitalize;
     }
     h3 {
       position: relative;
-    }
-    .pinkSparkling {
-      position: absolute;
-      top: 10px;
-      right: 0;
     }
     li {
       font-size: 18px;
@@ -95,8 +90,10 @@
         padding-top: 20px;
         border-top: 1px solid #fff;
       }
-      h3 {
-        width: 280px;
+      .pinkSparkling {
+        position: absolute;
+        top: 5px;
+        right: -5px;
       }
     }
 
@@ -106,19 +103,21 @@
         width: 220px;
         text-decoration: underline;
       }
+      .pinkSparkling {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
     }
 
     .learned {
       border-top: #fff 1px solid;
       h3 {
-        width: 330px;
-        font-size: 40px;
+        width: 290px;
+        font-size: 32px;
         margin-left: auto;
         border: #fff 1px solid;
         border-top: none;
-        .pinkSparkling {
-          right: 30px;
-        }
       }
       ol {
         padding-top: 20px;
