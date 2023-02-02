@@ -8,6 +8,7 @@ import data from "../assets/DB/projectsData";
 import "./projects.scss";
 // img
 import pinkSparkling from "../assets/images/pink-sparkling.png";
+import GoUp from "../components/GoUp";
 
 function Projects() {
   return (
@@ -38,6 +39,8 @@ function Projects() {
           ))}
         </div>
       </div>
+
+      <GoUp />
     </div>
   );
 }

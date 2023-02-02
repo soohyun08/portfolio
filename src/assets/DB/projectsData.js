@@ -1,11 +1,11 @@
 export default [
   {
     id: 1,
-    name: "",
-    logoImg: "",
+    name: "Portfolio",
+    logoImg: "/images/portfolio/portLogo.png",
     img: "",
-    device: " WEB / App ",
-    tool: "JavaScript(ES6+) / 반응형",
+    device: " WEB",
+    tool: "React",
     team: "Personal project",
   },
   {

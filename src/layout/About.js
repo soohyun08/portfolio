@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 
 // 연결된 컴포넌트: 네비게이션
 import Navigation from "../components/Navigation";
@@ -10,6 +9,7 @@ import "./about.scss";
 //이미지
 import img from "../assets/images/gallery2.jpg";
 import pinkSparkling from "../assets/images/pink-sparkling.png";
+import GoUp from "../components/GoUp";
 
 function About() {
   return (
@@ -72,6 +72,8 @@ function About() {
           </div>
         </div>
       </div>
+
+      <GoUp />
     </div>
   );
 }

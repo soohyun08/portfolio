@@ -10,7 +10,7 @@
 
     .subHeadline {
       font-size: 34px;
-      font-weight: 800;
+      font-weight: 700;
       background: url(../../assets/images/yellow-circle.png) no-repeat 50%;
       width: 200px;
       height: 90px;
@@ -56,57 +56,109 @@
         font-weight: 500;
       }
     }
+
     section {
+      margin-bottom: 100px;
+    }
+
+    .section1 {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      margin-bottom: 100px;
       .title {
-        line-height: 1.2;
         h2 {
           font-size: 48px;
-          font-weight: 500;
+          font-weight: 600;
         }
-        p {
-          font-size: 25px;
-          font-weight: 200;
+        .aim {
+          display: flex;
+          margin: 30px 60px 0 0;
+          padding: 10px;
+          p {
+            width: 80px;
+            font-size: 20px;
+          }
+          li {
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 1.7;
+            word-break: keep-all;
+            list-style: inside lower-roman;
+          }
         }
       }
-      .myRole {
+      .skill {
         border: 1px solid #fff;
+        width: 300px;
         h3 {
           text-align: center;
           border-bottom: 1px solid #fff;
           padding: 5px;
-          font-size: 22px;
-          font-weight: 500;
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 1.7;
+          font-weight: 200;
+          padding: 10px;
+          &.tool {
+            border-top: 1px solid #fff;
+          }
         }
       }
     }
 
-    .challenges {
-      border: 1px solid #fff;
-      margin-bottom: 80px;
-      ul {
-        padding-top: 20px;
-        border-top: 1px solid #fff;
+    .section2 {
+      h3 {
+        border-bottom: 1px solid #fff;
+        border-top: none;
+        padding: 0 10px;
+        width: 250px;
+        margin: 100px auto 30px;
       }
       .pinkSparkling {
         position: absolute;
         top: 5px;
-        right: -5px;
-      }
-    }
-
-    .solution {
-      margin-bottom: 100px;
-      h3 {
-        width: 220px;
-        text-decoration: underline;
-      }
-      .pinkSparkling {
-        position: absolute;
-        top: 10px;
         right: 10px;
+      }
+      .description {
+        display: flex;
+        width: 100%;
+        padding-top: 50px;
+        .structure {
+          img {
+            width: 250px;
+          }
+          figcaption {
+            font-weight: 200;
+            text-align: left;
+          }
+        }
+        .functions {
+          margin-left: 60px;
+          ul {
+            margin-bottom: 50px;
+            li {
+              h4 {
+                font-size: 20px;
+                // text-decoration: underline;
+                // margin: 10px 0;
+                &:nth-child(1) {
+                  margin-top: -7px;
+                }
+              }
+              ul {
+                // list-style: inside disc;
+                li {
+                  font-weight: 200;
+                  line-height: 1.7;
+                  margin-bottom: 10px;
+                  color: #ddd;
+                  word-break: keep-all;
+                }
+              }
+            }
+          }
+        }
       }
     }
 

@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 // layout
 import Footer from "./layout/Footer";
@@ -19,13 +21,24 @@ import NotFoundPage from "./components/NotFoundPage";
 import "./assets/style/style.scss";
 
 function App() {
+  const [portfolio, setPortfolio] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const DataList = await axios.get("./data/SubPage.json");
+      console.log(DataList);
+      setPortfolio(DataList.data.fortpolioDataList);
+    };
+    getData();
+  }, []);
+
   return (
     <>
       <Header />
 
       <Routes>
         <Route path="/" element={<Projects />} />
-        <Route path="/sub1" element={<SubPage1 />} />
+        <Route path="/sub1" element={<SubPage1 portfolio={portfolio} />} />
         <Route path="/sub2" element={<SubPage2 />} />
         <Route path="/sub3" element={<SubPageJoinUs />} />
 
