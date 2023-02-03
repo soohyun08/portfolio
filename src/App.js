@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 // layout
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
-// import Main from "./layout/Main";
 import Projects from "./layout/Projects";
 import About from "./layout/About";
 
@@ -21,15 +20,16 @@ import NotFoundPage from "./components/NotFoundPage";
 import "./assets/style/style.scss";
 
 function App() {
-  const [portfolio, setPortfolio] = useState([]);
+  const [functions, setFunctions] = useState([]);
   const [challenges, setChallenges] = useState([]);
+  const [convention, setConvention] = useState([]);
 
   useEffect(() => {
     const getData = async () => {
       const DataList = await axios.get("./subPageData/portfolio.json");
-      console.log(DataList);
-      setPortfolio(DataList.data.skillDataList);
+      setFunctions(DataList.data.functionsDataList);
       setChallenges(DataList.data.challengesDataList);
+      setConvention(DataList.data.conventionDataList);
     };
     getData();
   }, []);
@@ -42,7 +42,13 @@ function App() {
         <Route path="/" element={<Projects />} />
         <Route
           path="/sub1"
-          element={<SubPage1 portfolio={portfolio} challenges={challenges} />}
+          element={
+            <SubPage1
+              functions={functions}
+              challenges={challenges}
+              convention={convention}
+            />
+          }
         />
         <Route path="/sub2" element={<SubPage2 />} />
         <Route path="/sub3" element={<SubPageJoinUs />} />

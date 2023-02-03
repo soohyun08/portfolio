@@ -12,6 +12,8 @@ import "./projects.scss";
 import pinkSparkling from "../assets/images/pink-sparkling.png";
 import GoUp from "../components/GoUp";
 
+import Typewriter from "typewriter-effect";
+
 function Projects() {
   return (
     <div className="tabContainer">
@@ -21,8 +23,15 @@ function Projects() {
           <div className="greeting">
             <h1>
               <strong>반갑습니다!</strong>
-              사용자의 편의와 깔끔한 코드를 <br />
-              추구하는 <em>프론트엔드 개발자</em> , <br />
+              사용자의 편의와 <br />
+              깔끔한 코드를 추구하는
+              <Typewriter
+                options={{
+                  strings: ["프론트엔드 개발자 ,"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
               김수현입니다.
             </h1>
           </div>

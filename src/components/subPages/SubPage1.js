@@ -9,9 +9,11 @@ import "./subpage.scss";
 
 // 이미지
 import pinkSparkling from "../../assets/images/pink-sparkling.png";
-import siteImg from "../../assets/images/goSeeTheSite.PNG";
+import ChallengesSolution from "./ChallengesSolution";
+import Functions from "./Functions";
+import Convention from "./Convention";
 
-function SubPage1({ portfolio, challenges }) {
+function SubPage1({ functions, challenges, convention }) {
   const navi = useNavigate();
 
   const goPrev = () => {
@@ -33,12 +35,24 @@ function SubPage1({ portfolio, challenges }) {
 
         {/* <MainPicSwiper /> */}
 
+        <h2>Portfolio</h2>
+
         <section className="section1">
           <div className="title">
-            <h2>Portfolio</h2>
             <div className="aim">
               <div className="aimTxt">
-                <h3>목표</h3>
+                <h4>
+                  {/* 목표 */}
+                  aim
+                  {/*                   
+                  <div className="h4Bg">
+                    <img
+                      src={pinkSparkling}
+                      alt="핑크색 빤작이"
+                      className="pinkSparkling"
+                    />
+                  </div> */}
+                </h4>
                 <ol>
                   <li>배운 것보다 활용할 수 있는 기술을 위주로 전달한다.</li>
                   <li>
@@ -51,78 +65,59 @@ function SubPage1({ portfolio, challenges }) {
           </div>
 
           <div className="skill">
-            <h3>사용기술</h3>
+            <h4>function</h4>
+
             <p>
-              React, SCSS, useEffect, useState, useNavigate, react-router-dom
-              (Link, NavLink, Routes, Route, HashRouter)
+              React: useEffect, useState, useNavigate <br />
+              디자인: SCSS
             </p>
-            <p className="tool">데이터 요청 및 출력 : Axios, JSON</p>
-            <p className="tool">
-              Tool : GitHub, Visual Studio Code, Figma, Illustrator, Swiper
-            </p>
+            <p>라우터: Link, NavLink, Routes, Route, HashRouter</p>
+            <p>라이브러리 : Swiper</p>
+            <p>툴 : GitHub, Visual Studio Code, Figma, Illustrator</p>
+            <p>데이터 요청 및 출력 : Axios, JSON</p>
           </div>
         </section>
 
         <section className="section2">
+          <h3>convention</h3>
+          <div className="conventionWrapper">
+            <Convention convention={convention} />
+          </div>
+        </section>
+
+        <section className="section3">
           <h3 className="subHeadline">
-            페이지 구성
-            <img
+            page structure
+            {/*             <img
               src={pinkSparkling}
               alt="핑크색 빤작이"
               className="pinkSparkling"
-            />
+            /> */}
           </h3>
+
           <div className="description">
             <figure className="structure">
               <img src={path + "/images/portfolio/portFolioStructure1.png"} />
               <img src={path + "/images/portfolio/portFolioStructure2.png"} />
               <figcaption>디렉토리 구조</figcaption>
             </figure>
+
             <div className="functions">
-              {portfolio.map((list) => {
-                return (
-                  <ul key={list.id}>
-                    <li>
-                      <h4>{list.name} : </h4>
-                      <ul>
-                        <li>{list.des1}</li>
-                        <li>{list.des2}</li>
-                      </ul>
-                    </li>
-                  </ul>
-                );
-              })}
+              <Functions functions={functions} />
             </div>
           </div>
         </section>
 
-        <section className="learned">
-          <h3 className="subHeadline">
-            문제 및 해결
-            <img
+        <section className="section4">
+          <h4 className="subHeadline">
+            challenges solution
+            {/*             <img
               src={pinkSparkling}
               alt="핑크색 빤작이"
               className="pinkSparkling"
-            />
-          </h3>
-
-          <ol>
-            {challenges.map((list) => {
-              return (
-                <li key={list.id}>
-                  <h5>{list.title}</h5>
-                  <p>
-                    <strong>Challenges : </strong>
-                    {list.challenges}
-                  </p>
-                  <p>
-                    <strong>Solution : </strong>
-                    {list.solution}
-                  </p>
-                </li>
-              );
-            })}
-          </ol>
+            /> */}
+          </h4>
+          <ChallengesSolution challenges={challenges} />
         </section>
 
         {/* <GoSite /> */}
