@@ -31,7 +31,7 @@ function SubPage1({ portfolio, challenges }) {
           <div className="num">NO. 1</div>
         </div>
 
-        <MainPicSwiper />
+        {/* <MainPicSwiper /> */}
 
         <section className="section1">
           <div className="title">

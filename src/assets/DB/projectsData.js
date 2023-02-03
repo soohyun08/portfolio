@@ -3,7 +3,7 @@ export default [
     id: 1,
     name: "Portfolio",
     logoImg: "/images/portfolio/portLogo.png",
-    img: "",
+    img: "/images/portfolio/mainPic.png",
     device: " WEB",
     tool: "React",
     team: "Personal project",

@@ -1,3 +1,5 @@
+import React, { useRef } from "react";
+
 // 연결된 컴포넌트
 import ProjectsInner from "../components/ProjectsInner";
 import Navigation from "../components/Navigation";

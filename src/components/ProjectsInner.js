@@ -3,7 +3,6 @@ import "./projectsInner.scss";
 
 function ProjectsInner({ item }) {
   const path = process.env.PUBLIC_URL;
-  // const { id, name, img, device, team, tool, role, logoImg } = item;
 
   return (
     <NavLink to={`/sub${item.id}`} className="projectsInner">
