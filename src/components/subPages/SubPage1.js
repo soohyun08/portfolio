@@ -1,15 +1,17 @@
 import { useNavigate } from "react-router-dom";
-
 import MainPicSwiper from "./MainPicSwiper";
+
 import GoUp from "../GoUp";
-// 디자인
-import "./subpage.scss";
-import "./subPage1.scss";
-// 이미지
-import pinkSparkling from "../../assets/images/pink-sparkling.png";
 import GoSite from "./GoSite";
 
-function SubPage1({ portfolio }) {
+// 디자인
+import "./subpage.scss";
+
+// 이미지
+import pinkSparkling from "../../assets/images/pink-sparkling.png";
+import siteImg from "../../assets/images/goSeeTheSite.PNG";
+
+function SubPage1({ portfolio, challenges }) {
   const navi = useNavigate();
 
   const goPrev = () => {
@@ -35,14 +37,16 @@ function SubPage1({ portfolio }) {
           <div className="title">
             <h2>Portfolio</h2>
             <div className="aim">
-              <p>목표 : </p>
-              <ol>
-                <li>배운 것보다 활용할 수 있는 기술을 위주로 전달한다.</li>
-                <li>
-                  지금까지 배운 내용을 정리하고 앞으로 더 공부해야 할 내용을
-                  정리하는 계기가 된다.
-                </li>
-              </ol>
+              <div className="aimTxt">
+                <h3>목표</h3>
+                <ol>
+                  <li>배운 것보다 활용할 수 있는 기술을 위주로 전달한다.</li>
+                  <li>
+                    지금까지 배운 내용을 정리하고 앞으로 더 공부해야 할 내용을
+                    정리하는 계기가 된다.
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
 
@@ -60,7 +64,7 @@ function SubPage1({ portfolio }) {
         </section>
 
         <section className="section2">
-          <h3 className=" subHeadline">
+          <h3 className="subHeadline">
             페이지 구성
             <img
               src={pinkSparkling}
@@ -101,21 +105,27 @@ function SubPage1({ portfolio }) {
               className="pinkSparkling"
             />
           </h3>
+
           <ol>
-            <li>
-              것은 품고 고행을 별과 풍부하게 뜨거운지라, 많이 황금시대를 듣는다.
-              힘차게 우리 위하여서, 주는 구할 이상, 칼이다. 원질이 같이, 얼음에
-              수 황금시대다.
-            </li>
-            <li>
-              것은 품고 고행을 별과 풍부하게 뜨거운지라, 많이 황금시대를 듣는다.
-              힘차게 우리 위하여서, 주는 구할 이상, 칼이다. 원질이 같이, 얼음에
-              수 황금시대다.
-            </li>
+            {challenges.map((list) => {
+              return (
+                <li key={list.id}>
+                  <h5>{list.title}</h5>
+                  <p>
+                    <strong>Challenges : </strong>
+                    {list.challenges}
+                  </p>
+                  <p>
+                    <strong>Solution : </strong>
+                    {list.solution}
+                  </p>
+                </li>
+              );
+            })}
           </ol>
         </section>
 
-        <GoSite />
+        {/* <GoSite /> */}
       </div>
 
       <GoUp />

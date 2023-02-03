@@ -2,10 +2,19 @@ import "./footer.scss";
 import footerLogo from "../assets/images/footerLogo.png";
 
 function Footer() {
+  const url = "";
+
   return (
     <footer className="footer">
       <div className="footerWrapper">
-        <div className="resume">RESUME</div>
+        <div
+          className="resume"
+          onClick={() => {
+            window.open(url);
+          }}
+        >
+          RESUME
+        </div>
         <div className="footerImg">
           <img src={footerLogo} alt="로고" />
         </div>

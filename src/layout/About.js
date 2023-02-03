@@ -60,6 +60,10 @@ function About() {
                   <li>{item.des4}</li>
                   <li>{item.des5}</li>
                   <li>{item.des6}</li>
+                  <li>{item.des7}</li>
+                  <li>{item.des8}</li>
+                  <li>{item.des9}</li>
+                  <li>{item.des10}</li>
                 </ul>
               </section>
             ))}

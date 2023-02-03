@@ -22,12 +22,14 @@ import "./assets/style/style.scss";
 
 function App() {
   const [portfolio, setPortfolio] = useState([]);
+  const [challenges, setChallenges] = useState([]);
 
   useEffect(() => {
     const getData = async () => {
-      const DataList = await axios.get("./data/SubPage.json");
+      const DataList = await axios.get("./subPageData/portfolio.json");
       console.log(DataList);
-      setPortfolio(DataList.data.fortpolioDataList);
+      setPortfolio(DataList.data.skillDataList);
+      setChallenges(DataList.data.challengesDataList);
     };
     getData();
   }, []);
@@ -38,7 +40,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Projects />} />
-        <Route path="/sub1" element={<SubPage1 portfolio={portfolio} />} />
+        <Route
+          path="/sub1"
+          element={<SubPage1 portfolio={portfolio} challenges={challenges} />}
+        />
         <Route path="/sub2" element={<SubPage2 />} />
         <Route path="/sub3" element={<SubPageJoinUs />} />
 

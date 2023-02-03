@@ -1,7 +1,7 @@
 @import "../../assets/style/variable.scss";
 
-.goSite {
-  position: absolute;
+/*  .goSite {
+ position: absolute;
   bottom: -90px;
   right: 40px;
   overflow: hidden;
@@ -13,4 +13,38 @@
   font-size: 1.3em;
   background-color: $bgColorBlack;
   cursor: pointer;
+} */
+
+.goSite {
+  // position: absolute;
+  // bottom: 20px;
+  // right: 45px;
+  margin-left: auto;
+  width: 120px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+  background-color: $bgColorBlack;
+  cursor: pointer;
+  text-align: center;
+
+  display: grid;
+  place-content: center;
+  span {
+    color: $colorLightGreen;
+    font-size: 6em;
+    animation: mov 2s infinite linear;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  @keyframes mov {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
 }
