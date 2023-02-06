@@ -1,21 +1,6 @@
 function Convention({ convention }) {
   return (
     <>
-      {/*       {convention.map((list) => {
-        return (
-          <div className="convention">
-            <ul key={list.id}>
-              <li>{list.title}</li>
-              <li>{list.item1}</li>
-              <li>{list.item2}</li>
-              <li>{list.item3}</li>
-              <li>{list.item4}</li>
-              <li>{list.item5}</li>
-              <li>{list.item6}</li>
-            </ul>
-          </div>
-        );
-      })} */}
       <ul>
         <li>들여쓰기</li>
         <li>- 공백문자 2개를 사용한다.</li>
@@ -36,7 +21,7 @@ function Convention({ convention }) {
         <li>- 웹표준과 웹접근성에 따라 HTML은 시멘틱마크업에 따라 작성한다.</li>
       </ul>
 
-      <ul>
+      <ul style={{ width: "48.4%" }}>
         <li>변수</li>
         <li>- const와 let은 사용 시점에 선언 및 할당한다.</li>
         <li>
@@ -45,7 +30,16 @@ function Convention({ convention }) {
         </li>
       </ul>
 
-      <ul>
+      <ul style={{ width: "48.3%" }}>
+        <li>스타일</li>
+        <li>- 폰트와 리셋 외의 스타일로는 SCSS를 사용한다.</li>
+        <li>
+          - 각 컴포넌트에 적용하는 SCSS 스타일은 따로 style 폴더에 저장하지
+          않고, 해당 컴포넌트와 같은 폴더에 저장한다.
+        </li>
+      </ul>
+
+      <ul style={{ width: "48.4%" }}>
         <li>폴더 정리</li>
         <li>
           - layout 폴더에는 페이지의 큼직한 레이아웃 컴포넌트인 Header, Footer,
@@ -59,7 +53,7 @@ function Convention({ convention }) {
           - 서로 연관된 파일들은 하나의 폴더에 넣어준다. (프로젝트 서브 페이지)
         </li>
       </ul>
-      <ul>
+      <ul style={{ width: "48.3%" }}>
         <li>폴더명</li>
         <li>
           - Project Sub Page는 제작한 프로젝트 수만큼 만들고, 프로젝트 수가 많지
@@ -70,15 +64,6 @@ function Convention({ convention }) {
         <li>
           - 스타일 시트 파일(CSS)은 스타일 시트 적용할 파일명과 동일하나 시작은
           소문자로 맞춘다.
-        </li>
-      </ul>
-
-      <ul>
-        <li>스타일</li>
-        <li>- 폰트와 리셋 외의 스타일로는 SCSS를 사용한다.</li>
-        <li>
-          - 각 컴포넌트에 적용하는 SCSS 스타일은 따로 style 폴더에 저장하지
-          않고, 해당 컴포넌트와 같은 폴더에 저장한다.
         </li>
       </ul>
 

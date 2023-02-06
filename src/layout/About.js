@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-
 // 연결된 컴포넌트: 네비게이션
 import Navigation from "../components/Navigation";
 // data

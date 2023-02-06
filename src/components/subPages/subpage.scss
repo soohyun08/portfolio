@@ -142,10 +142,11 @@
         text-align: center;
       }
       .conventionWrapper {
-        height: 820px;
+        height: 760px;
         border: #ddd 1px solid;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         ul {
           margin: 0 auto;
           border: #ddd 1px solid;

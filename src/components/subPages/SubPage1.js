@@ -54,13 +54,12 @@ function SubPage1({ functions, challenges, convention }) {
 
             <p>
               UI: React <br />
-              훅: useState, useEffect, useNavigate <br />
               디자인: SCSS
             </p>
             <p>라우터: Link, NavLink, Routes, Route, HashRouter</p>
-            <p>라이브러리 : Swiper</p>
-            <p>툴 : GitHub, Visual Studio Code, Figma, Illustrator</p>
-            <p>데이터 요청 및 출력 : Axios, JSON</p>
+            <p>라이브러리: Swiper</p>
+            <p>툴: GitHub, Visual Studio Code, Figma, Illustrator</p>
+            <p>데이터 요청 및 출력: Axios, JSON</p>
           </div>
         </section>
 
