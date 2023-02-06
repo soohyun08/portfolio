@@ -12,9 +12,9 @@ export default [
   {
     id: 2,
     name: "JavaScript (ES6+)",
-    des1: "- ES6+ 문법을 기반으로 한 웹 사이트 구현",
+    des1: "- 웹 사이트 구현",
     des2: "- Map, Filter, Reduce 등 고차 함수를 응용한 코드 작성",
-    des3: "- 이벤트 메소드를 활용한 효과 구현",
+    des3: "- 메소드를 활용한 동적인 이펙트 구현",
     des4: "- setTimeout, setInterval / 콜백함수 / async, await 함수를 활용한 비동기 작업",
     des5: "- Fetch API, Axios 라이브러리를 활용한 비동기 작업",
     des6: "- node js를 이용한 런타임 실행",
@@ -28,10 +28,8 @@ export default [
     des4: "- Open API를 활용해 외부 데이터 가져오기",
     des5: "- styled-components를 활용한 디자인",
     des6: "- Context API, Redux Toolkit으로 전역 상태 관리",
-    des7: "- React-router-dom을 활용한 페이지 이동",
+    des7: "- React-router-dom을 활용한 단일 웹페이지 제작",
     des8: "- build로 직접 GitHub 백업",
-    des9: "- Youtube 영상 가져오기",
-    des10: "- KakoAPI 활용하기",
   },
   {
     id: 4,
@@ -43,7 +41,7 @@ export default [
     id: 5,
     name: "Illustrator / Photoshop / Figma",
     des1: "- 팬툴을 이용한 아이콘 제작",
-    des2: "- 이미지 편집",
+    des2: "- 간단한 이미지 편집",
     des2: "- Figma를 이용한 프로토타입 제작",
   },
   {

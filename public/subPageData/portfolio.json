@@ -15,7 +15,7 @@
       "id": 3,
       "name": "Projects SubPages",
       "des1": "- 이전으로 돌아가기 버튼에 Router를 이용한 내비게이션 설정",
-      "des2": "- '페이지 구성'의 기능 리스트를 map 메서드로 작성. 데이터는 axios를 이용해 Pulic에 저장한 JSon 파일을 출력",
+      "des2": "- '페이지 구성'의 기능 리스트를 map 메서드로 작성. 데이터는 axios를 이용해 Pulic에 저장한 JSON 파일을 출력",
       "des3": "- swiper를 이용한 슬라이드 이용"
     },
     {
@@ -37,90 +37,84 @@
     }
   ],
 
-  "challengesDataList": [
-    {
-      "id": 1,
-      "title": "Projects 페이지에서 서브페이지 이동 경로 오류",
-      "challenges": "서브페이지를 Projects 컴포넌트의 자식 컴포넌트로서 Params로 연결하려 했으나, 그 결과 계속 SubPage1 로만 연결되는 오류 ",
-      "solution": "서브페이지는 헤더와 푸터 외에는 완전히 다른 페이지로 이동하는 것이므로 자식 컴포넌트가 아닌 일반 컴포넌트로 연결해야 한다."
-    },
-    {
-      "id": 2,
-      "title": "네비게이션 바 클릭 시 오류",
-      "challenges": "네비게이션의 'about'를 클릭했을 때 페이지는 바로 연결되었지만, 버튼 색은 2번 클릭해야 연하게 변했다.",
-      "solution": "내비게이션 버튼 모양으로 사용한 이미지가 방해해서 오류가 난 것 같아, z-index를 사용했으나 해결되지 않음. 따라서 이미지를 클릭 후 기존 버튼 위에 변화된 색의 버튼이 올라가도록 디자인"
-    }
-  ],
-
   "conventionDataList": [
     {
       "id": 1,
       "title": "깃허브 주소 설정",
-      "item1": "portfolio 저장소와 각 프로젝트 사이트의 저장소를 따로 만든다."
+      "item1": "- portfolio 저장소와 각 프로젝트 사이트의 저장소를 따로 만든다."
     },
     {
       "id": 2,
       "title": "들여쓰기",
-      "item1": "공백문자 2개를 사용한다."
+      "item1": "- 공백문자 2개를 사용한다."
     },
     {
       "id": 3,
-      "title": "문장종료",
-      "item1": "세미콜론(;)을 필수로 한다."
+      "title": "문법",
+      "item1": "- eslint 기본문법에 따른다.."
     },
     {
       "id": 4,
-      "title": "네이밍 규칙",
-      "item1": "식별자명은 리액트 컴포넌트와 겹치지 않게 카멜 표기법으로 작성한다.",
-      "item2": "배열의 이름은 복수형으로 작성한다.",
-      "item3": "form 사용시 id/className 값을 필수로 입력하며, name과 동일하게 입력한다.",
-      "item4": "반환 값이 boolean형인 함수는 'is'로 시작한다.",
-      "item5": "Props에 이벤트가 연결되어 있는 경우 on을 사용하고, 이벤트가 발생했을 때 호출되는 실제 Function은 handle 접두사를 붙인다.",
-      "item6": "이름이 겹치는 경우 on+명사+동사, handle+명사+동사 로 작성한다."
+      "title": "JSON",
+      "item1": "- JSON파일을 이용할 경우, 절대 경로로 public 폴더에 저장한다."
     },
     {
       "id": 5,
-      "title": "변수",
-      "item1": "되도록 const 상수를 사용하며 변하는 값의 경우 let 변수를 사용한다.",
-      "item2": "const와 let은 사용 시점에 선언 및 할당한다.",
-      "item3": "전역변수는 사용하지 않는다. "
+      "title": "폴더명",
+      "item1": " - Project Sub Page는 제작한 프로젝트 수만큼 만들고, 프로젝트 수가 많지 않기 때문에 파일명은 SubPage1, SubPage2, SubPage3과 같이 동일한 이름에 숫자만 다르게 표기한다.",
+      "item2": "- 테스트 파일은 테스트 대상 파일명 .test 를 붙여준다.",
+      "item3": "- 스타일 시트 파일(CSS)은 스타일 시트 적용할 파일명과 동일하나 시작은 소문자로 맞춘다."
     },
     {
       "id": 6,
-      "title": "JSON",
-      "item1": "JSON파일을 이용할 경우, 절대 경로로 public 폴더에 저장한다."
+      "title": "스타일",
+      "item1": "- 폰트와 리셋 외의 스타일로는 SCSS를 사용한다.",
+      "item2": "- 각 컴포넌트에 적용하는 SCSS 스타일은 따로 style 폴더에 저장하지 않고, 해당 컴포넌트와 같은 폴더에 저장한다. "
     },
     {
       "id": 7,
       "title": "HTML",
-      "item1": "웹표준과 웹접근성에 따라 HTML은 시멘틱마크업에 따라 작성한다.",
-      "item2": "components 폴더는 레이아웃 외의 컴포넌트로 구성한다. (Navigation, GoUp버튼, NotFoundPage 등) ",
-      "item3": "서로 연관된 파일들은 하나의 폴더에 넣어준다. 예) 프로젝트 서브 페이지"
+      "item1": "- 웹표준과 웹접근성에 따라 HTML은 시멘틱마크업에 따라 작성한다.",
+      "item2": "- components 폴더는 레이아웃 외의 컴포넌트로 구성한다. (Navigation, GoUp버튼, NotFoundPage 등) ",
+      "item3": "- 서로 연관된 파일들은 하나의 폴더에 넣어준다. 예) 프로젝트 서브 페이지"
     },
     {
       "id": 8,
       "title": "폴더 정리",
-      "item1": "layout 폴더에는 페이지의 큼직한 레이아웃 컴포넌트인 Header, Footer, Projects, About로 구성한다.",
-      "item2": "components 폴더는 레이아웃 외의 컴포넌트로 구성한다. (Navigation, GoUp버튼, NotFoundPage 등) ",
-      "item3": "서로 연관된 파일들은 하나의 폴더에 넣어준다. 예) 프로젝트 서브 페이지 "
+      "item1": "- layout 폴더에는 페이지의 큼직한 레이아웃 컴포넌트인 Header, Footer, Projects, About로 구성한다.",
+      "item2": "- components 폴더는 레이아웃 외의 컴포넌트로 구성한다. (Navigation, GoUp버튼, NotFoundPage 등) ",
+      "item3": "- 서로 연관된 파일들은 하나의 폴더에 넣어준다. (프로젝트 서브 페이지)"
     },
     {
       "id": 9,
-      "title": "폴더명",
-      "item1": " Project Sub Page는 제작한 프로젝트 수만큼 만들고, 프로젝트 수가 많지 않기 때문에 파일명은 SubPage1, SubPage2, SubPage3과 같이 동일한 이름에 숫자만 다르게 표기한다.",
-      "item2": "테스트 파일은 테스트 대상 파일명 .test 를 붙여준다.",
-      "item3": "스타일 시트 파일(CSS)은 스타일 시트 적용할 파일명과 동일하나 시작은 소문자로 맞춘다."
+      "title": "변수",
+      "item1": "- 되도록 const 상수를 사용하며 변하는 값의 경우 let 변수를 사용한다.",
+      "item2": "- const와 let은 사용 시점에 선언 및 할당한다.",
+      "item3": "- 전역변수는 사용하지 않는다. "
+    }
+  ],
+
+  "challengesDataList": [
+    {
+      "id": 1,
+      "title": "Prams를 사용했을 때, Projects 페이지에서 서브페이지 이동 경로 오류 발생",
+      "img": "/images/portfolio/paramsErr.PNG",
+      "challenges": "Project SubPage를 Projects 컴포넌트의 자식 컴포넌트로서 Params로 연결하려 했으나, 그 결과 계속 SubPage1로 연결되는 오류 ",
+      "solution": "서브페이지는 헤더와 푸터 외에는 완전히 다른 페이지로 이동하는 것이므로 자식 컴포넌트가 아닌 일반 컴포넌트로 연결."
     },
     {
-      "id": 10,
-      "title": "스타일",
-      "item1": "폰트와 리셋 외의 스타일로는 SCSS를 사용한다.",
-      "item2": "각 컴포넌트에 적용하는 SCSS 스타일은 따로 style 폴더에 저장하지 않고, 해당 컴포넌트와 같은 폴더에 저장한다. "
+      "id": 2,
+      "title": "네비게이션 바 클릭 시 오류",
+      "img": "/images/portfolio/clickErr.PNG",
+      "challenges": "네비게이션의 'About Me'를 클릭했을 때 페이지는 정상적으로 연결되었지만, 사용자에게 페이지가 이동되었다는 신호가 되는 버튼 색 변경이 이루어지지 않았다.",
+      "solution": "내비게이션 버튼으로 사용한 이미지가 겹쳐 방해가 되는 것 같아서, z-index를 사용했으나 해결되지 않음. 결국 원인을 찾아내지 못해 기존 방법은 우회함. 그래서 기존에 사용하던 <Link>를 <NavLink>로 대신하여 boolean를 사용해서 네비게이션 버튼의 색이 페이지 이동과 함께 일어나도록 함"
     },
     {
-      "id": 11,
-      "title": "문법",
-      "item1": "eslint 기본문법에 따른다.."
+      "id": 3,
+      "title": "'프론트엔트 개발자'auto typing 자바스크립트 식으로 구현하기 실패",
+      "img": "/images/portfolio/autoTyping.png",
+      "challenges": "auto typing을 직접 자바스크립트 코트를 작성해서 적용하려 했으나, textContent와 같은 자바스크립트 언어를 리액트에 적용할 수 없어서 고민이 되었다. 또 다른 방법을 사용했을 때는 콘솔에는 이펙트가 성공적으로 정용되었으나 화면에 나타나지 않았다.",
+      "solution": "결국 검색해서 리액트 훅을 사용. 자바스크립트식 이펙트를 리액트에 적용하는 연습이 필요하다."
     }
   ]
 }

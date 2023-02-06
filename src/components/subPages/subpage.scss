@@ -12,7 +12,6 @@
     .subHeadline {
       font-size: 34px;
       font-weight: 700;
-      // background: url(../../assets/images/yellow-circle.png) no-repeat 50%;
       width: 200px;
       height: 90px;
       line-height: 90px;
@@ -21,17 +20,16 @@
     }
     h3,
     h4 {
-      // position: relative;
       background: url(../../assets/images/download.png);
       border: 1px solid #646464;
-      // color: $colorYellow;
+      font-weight: 700;
     }
 
     h2,
     h3,
     h4,
     strong {
-      font-family: "Chakra Petch", sans-serif;
+      font-family: $Chakra;
       text-transform: capitalize;
     }
     h4 {
@@ -71,6 +69,7 @@
       }
       .num {
         margin: 0 auto;
+        font-family: $Chakra;
         font-size: 1.6em;
         font-weight: 500;
       }
@@ -101,21 +100,6 @@
               border-bottom: 1px solid rgb(184, 184, 184);
               margin-bottom: 10px;
               position: relative;
-              .h4Bg {
-                width: 90px;
-                height: 50px;
-                background: url(../../assets/images/yellow-circle.png) no-repeat
-                  50%/ 90px;
-                position: absolute;
-                left: -5px;
-                top: 2px;
-                img {
-                  width: 20px;
-                  position: absolute;
-                  right: 0;
-                  top: 0;
-                }
-              }
             }
 
             li {
@@ -124,14 +108,15 @@
               font-weight: 200;
               line-height: 1.6;
               word-break: keep-all;
-              list-style: inside lower-roman;
+              // list-style: inside lower-roman;
+              list-style: none;
             }
           }
         }
       }
       .skill {
         border: 1px solid rgb(184, 184, 184);
-        width: 300px;
+        width: 310px;
         h4 {
           text-align: center;
           border-bottom: 1px solid rgb(184, 184, 184);
@@ -157,7 +142,7 @@
         text-align: center;
       }
       .conventionWrapper {
-        height: 770px;
+        height: 820px;
         border: #ddd 1px solid;
         display: flex;
         flex-wrap: wrap;
@@ -167,9 +152,9 @@
           width: 200px;
           margin: 7px;
           li {
-            list-style: inside disc;
-            padding: 5px 10px;
-            font-size: 15px;
+            margin-bottom: 10px;
+            padding: 0 10px;
+            font-size: 16px;
             font-weight: 300;
             color: #ddd;
             line-height: 1.5;
@@ -178,6 +163,7 @@
               text-align: center;
               font-size: 16px;
               font-weight: 500;
+              background-color: rgb(77, 77, 77);
             }
           }
         }
@@ -196,11 +182,6 @@
           display: block;
         }
       }
-      /*       .pinkSparkling {
-        position: absolute;
-        top: 5px;
-        right: 10px;
-      } */
       .description {
         display: flex;
         width: 100%;
@@ -219,7 +200,7 @@
           ul {
             margin-bottom: 50px;
             li {
-              h4 {
+              h5 {
                 font-size: 20px;
                 &:nth-child(1) {
                   margin-top: -7px;
@@ -242,7 +223,7 @@
 
     .section4 {
       border-top: #fff 1px solid;
-
+      position: relative;
       h4 {
         line-height: 1;
         width: 260px;
@@ -251,16 +232,12 @@
         border-top: none;
         display: grid;
         place-content: center;
-        /*         .pinkSparkling {
-          position: absolute;
-          top: 10px;
-          right: 20px;
-        } */
       }
 
-      ol {
+      .challenges {
         margin-top: 80px;
         margin-left: 20px;
+
         li {
           margin: 0 10px 7vh 0;
           h5 {
@@ -277,11 +254,14 @@
             word-break: keep-all;
             color: #ddd;
             strong {
-              color: lightsalmon;
+              color: $colorPink;
             }
             &:nth-of-type(2) strong {
-              color: skyblue;
+              color: $colorYellow;
             }
+          }
+          img {
+            margin-top: 10px;
           }
         }
       }

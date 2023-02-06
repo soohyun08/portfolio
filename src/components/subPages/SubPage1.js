@@ -3,15 +3,12 @@ import MainPicSwiper from "./MainPicSwiper";
 
 import GoUp from "../GoUp";
 import GoSite from "./GoSite";
-
-// 디자인
-import "./subpage.scss";
-
-// 이미지
-import pinkSparkling from "../../assets/images/pink-sparkling.png";
 import ChallengesSolution from "./ChallengesSolution";
 import Functions from "./Functions";
 import Convention from "./Convention";
+
+// 디자인
+import "./subpage.scss";
 
 function SubPage1({ functions, challenges, convention }) {
   const navi = useNavigate();
@@ -41,20 +38,8 @@ function SubPage1({ functions, challenges, convention }) {
           <div className="title">
             <div className="aim">
               <div className="aimTxt">
-                <h4>
-                  {/* 목표 */}
-                  aim
-                  {/*                   
-                  <div className="h4Bg">
-                    <img
-                      src={pinkSparkling}
-                      alt="핑크색 빤작이"
-                      className="pinkSparkling"
-                    />
-                  </div> */}
-                </h4>
+                <h4>aim</h4>
                 <ol>
-                  <li>배운 것보다 활용할 수 있는 기술을 위주로 전달한다.</li>
                   <li>
                     지금까지 배운 내용을 정리하고 앞으로 더 공부해야 할 내용을
                     정리하는 계기가 된다.
@@ -68,7 +53,8 @@ function SubPage1({ functions, challenges, convention }) {
             <h4>function</h4>
 
             <p>
-              React: useEffect, useState, useNavigate <br />
+              UI: React <br />
+              훅: useState, useEffect, useNavigate <br />
               디자인: SCSS
             </p>
             <p>라우터: Link, NavLink, Routes, Route, HashRouter</p>
@@ -86,19 +72,12 @@ function SubPage1({ functions, challenges, convention }) {
         </section>
 
         <section className="section3">
-          <h3 className="subHeadline">
-            page structure
-            {/*             <img
-              src={pinkSparkling}
-              alt="핑크색 빤작이"
-              className="pinkSparkling"
-            /> */}
-          </h3>
+          <h3 className="subHeadline">page structure</h3>
 
           <div className="description">
             <figure className="structure">
-              <img src={path + "/images/portfolio/portFolioStructure1.png"} />
-              <img src={path + "/images/portfolio/portFolioStructure2.png"} />
+              <img src={path + "/images/portfolio/portFolioStructure1.PNG"} />
+              <img src={path + "/images/portfolio/portFolioStructure2.PNG"} />
               <figcaption>디렉토리 구조</figcaption>
             </figure>
 
@@ -109,15 +88,8 @@ function SubPage1({ functions, challenges, convention }) {
         </section>
 
         <section className="section4">
-          <h4 className="subHeadline">
-            challenges solution
-            {/*             <img
-              src={pinkSparkling}
-              alt="핑크색 빤작이"
-              className="pinkSparkling"
-            /> */}
-          </h4>
-          <ChallengesSolution challenges={challenges} />
+          <h4 className="subHeadline">challenges / solution</h4>
+          <ChallengesSolution challenges={challenges} path={path} />
         </section>
 
         {/* <GoSite /> */}

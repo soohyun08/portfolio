@@ -1,6 +1,6 @@
-function ChallengesSolution({ challenges }) {
+function ChallengesSolution({ challenges, path }) {
   return (
-    <ol>
+    <ol className="challenges">
       {challenges.map((list) => {
         return (
           <li key={list.id}>
@@ -13,6 +13,7 @@ function ChallengesSolution({ challenges }) {
               <strong>Solution : </strong>
               {list.solution}
             </p>
+            <img src={path + list.img} alt={list.title} />
           </li>
         );
       })}
