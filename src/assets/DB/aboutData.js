@@ -13,7 +13,7 @@ export default [
     id: 2,
     name: "JavaScript (ES6+)",
     des1: "- DOM, BOM 제어",
-    des2: "- Map/ Filter/ Splice 등 ES6+",
+    des2: "- Map/ Filter/ Splice 등 ES6+ 고차 함수 제어",
     des3: "- input, change, submit 이벤트 / form 접근 프로퍼티로 변화에 따른 이벤트",
     des4: "- 마우스, 스크롤, 포인터 등의 이벤트를 활용한 동적인 이펙트 구현",
     des5: "- setTimeout, setInterval / 콜백함수를 활용해 비동기 동작 처리",
