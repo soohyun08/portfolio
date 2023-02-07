@@ -75,8 +75,7 @@ function SubPage1({ functions, challenges, convention }) {
 
           <div className="description">
             <figure className="structure">
-              <img src={path + "/images/portfolio/portFolioStructure1.PNG"} />
-              <img src={path + "/images/portfolio/portFolioStructure2.PNG"} />
+              <img src={path + "/images/portfolio/portFolioStructure.png"} />
               <figcaption>디렉토리 구조</figcaption>
             </figure>
 
