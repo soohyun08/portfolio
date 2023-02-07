@@ -9,9 +9,9 @@
     },
     {
       "id": 2,
-      "name": "Projects SubPages",
-      "des1": "- 이전으로 돌아가기 버튼에 Router의 useNavigate를 이용한 내비게이션 설정",
-      "des2": "- '페이지 구성'의 기능 리스트를 map 메서드로 작성. 데이터는 axios를 이용해 Pulic폴더에 저장한 JSON 파일을 출력",
+      "name": "Projects SubPages ('Projects'의 상세 페이지)",
+      "des1": "- 이전으로 돌아가기 버튼에 Router useNavigate를 이용한 내비게이션 설정",
+      "des2": "- '페이지 구성'과 '문제 및 해결'의 내용을 map 메서드로 작성. 데이터는 useState, useEffect, async/await, axios를 이용해 Public폴더에 저장한 JSON 파일을 출력",
       "des3": "- swiper를 이용한 슬라이드 이용",
       "des4": "- 제작한 웹 사이트로 이동할 수 있도록 'Go see the site'버튼 마련"
     },
@@ -23,12 +23,12 @@
     {
       "id": 4,
       "name": "Header",
-      "des1": "- 로고 이미지를 클릭하면 메인인 projects로 이동하도록 Router의 Link로 연결"
+      "des1": "- 로고 이미지를 클릭하면 메인인 projects로 이동하도록 Router Link로 연결"
     },
     {
       "id": 5,
       "name": "App.js",
-      "des1": "- 각 페이지를 Router로 연결",
+      "des1": "- 각 페이지를 Route로 연결",
       "des2": "- 에러 발생 시, NotFoundPage로 연결"
     },
     {
@@ -36,12 +36,12 @@
       "name": "GoUp 버튼",
       "des1": "- 페이지 맨 위로 돌아갈 때 쉽게 올라갈 수 있도록 GoUp 버튼을 마련",
       "des2": "- 사용자 편의를 생각하여 hover시 버튼이 조금 위로 올라가고 흐리던 버튼이 또렷하게 보이도록 디자인",
-      "des3": "- useState, useEffect를 이용해 스크롤에 따른 이동"
+      "des3": "- useState, useEffect, behavior:'smooth'를 이용해 스크롤에 따른 이동 구현"
     },
     {
       "id": 7,
       "name": "내비게이션 (메뉴 탭)",
-      "des1": "- 라우터 NavLink를 사용해 페이지 이동. NavLink의 특성인 논리 연산자식으로 탭의 색 변화"
+      "des1": "- Router NavLink를 사용해 페이지 이동. NavLink 특성인 논리 연산자로 탭의 색 변화"
     }
   ],
 
@@ -105,24 +105,24 @@
   "challengesDataList": [
     {
       "id": 1,
-      "title": "Params를 사용했을 때, Projects 페이지에서 서브페이지 이동 경로 오류 발생",
-      "img": "/images/portfolio/paramsErr.PNG",
-      "challenges": "Project SubPage를 Projects 컴포넌트의 자식 컴포넌트로서 Params로 연결하려 했으나, 그 결과 계속 SubPage1로 연결되는 오류 ",
-      "solution": "서브페이지는 헤더와 푸터 외에는 완전히 다른 페이지로 이동하므로 자식 컴포넌트가 아닌 일반 컴포넌트로 연결."
+      "title": "Projects에서 상세페이지로 넘어갈 때, 모든 상세페이지가 첫 번째 상세페이지로 연결 됨",
+      "imgUrl": "paramsErr.PNG",
+      "challenges": "상세페이지('Subpage1, Subpage2 등')를 Route, Params를 사용해서 'Projects'컴포넌트의 자식 컴포넌트로 연결했다. 그 결과 모든 상세페이지가 SubPage1로 연결되는 오류가 발생",
+      "solution": "상세페이지는 헤더와 푸터 외 완전히 다른 구조의 페이지로 이동됨으로 자식 컴포넌트가 아닌 형제 컴포넌트로 연결"
     },
     {
       "id": 2,
-      "title": "메뉴 탭 클릭 시 오류",
-      "img": "/images/portfolio/clickErr.PNG",
-      "challenges": "네비게이션의 'About Me'를 클릭했을 때 페이지는 정상적으로 이동했지만, 사용자에게 페이지가 이동되었다고 인지하게 하는 버튼의 색이 변하지 않았다.",
-      "solution": "오류의 원인을 결국 찾지 못해서 기존의 방법은 우회함. 그리고 기존에 사용하던 <Link>대신 <NavLink>를 사용함으로 논리 연산자로 페이지 이동과 함께  네비게이션 버튼의 색이 변하도록 함"
+      "title": "메뉴 탭을 클릭했을 때 active된 버튼의 색이 변하지 않음",
+      "imgUrl": "clickErr.PNG",
+      "challenges": "메뉴 탭의 'About Me'를 클릭했을 때, About 페이지로 이동하고 동시에 클릭한 버튼의 배경색이 변해야 함. 페이지는 정상적으로 이동했지만 동시에 바뀌어야하는 버튼 색이 2번 클릭을 해야 바뀌었다.",
+      "solution": "오류의 원인을 결국 찾지 못해서 <NavLink>를 사용했고, 논리 연산자로 페이지 이동과 함께 네비게이션 버튼의 색이 변하도록 설정 함"
     },
     {
       "id": 3,
-      "title": "'프론트엔트 개발자'auto typing 자바스크립트 식으로 구현하기",
-      "img": "/images/portfolio/autoTyping.png",
-      "challenges": "직접 작성한 자바스크립트 코트로 auto typing을 구현하려 했으나 여러 고난들이 있었다. textContent와 같이 자바스크립트 고유의 키워드를 리액트에 적용할 수 없어서 고민이 되었고, 어떤 때는 콘솔에는 이펙트가 성공적으로 정용되었으나 화면에 나타나지 않았다.",
-      "solution": "결국 검색해서 리액트 훅을 사용. 자바스크립트 코드로 작성한 이펙트를 어떻게 리액트에 적용하는지 연습이 필요하다."
+      "title": "Projects 페이지의 '프론트엔트 개발자' auto typing을 자바스크립트 코드로 구현하기",
+      "imgUrl": "autoTyping.png",
+      "challenges": "자바스크립트 코트를 직접 작성해서 auto typing을 구현하려 했으나 여러 난관들이 있었다. textContent와 같은 자바스크립트 프로퍼티를 리액트에 적용할 수 없어서 고민이 되었고, 콘솔에 성공적으로 정용되었으나 원하는 글씨가 화면에 나타나지 않았다.",
+      "solution": "결국 검색해서 리액트 훅을 사용. 자바스크립트 코드로 작성한 이펙트를 어떻게 리액트에 적용하는지 연습이 더 필요하다."
     }
   ]
 }
