@@ -1,8 +1,7 @@
-import Marquee from "react-fast-marquee";
 import "./goSite.scss";
 
 function GoSite() {
-  const url = "https://teamproject-no-2.github.io/dragonz/";
+  const url = "http://localhost:3000/granhand#/";
   return (
     <div
       className="goSite cover"
@@ -10,9 +9,6 @@ function GoSite() {
         window.open(url);
       }}
     >
-      {/*       <Marquee loop={0} gradient={false}>
-        o see the site Go see the site G
-      </Marquee> */}
       <div className="goSite">
         GO SEE THE SITE
         <span className="material-symbols-outlined">exit_to_app</span>

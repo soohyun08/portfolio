@@ -1,11 +1,14 @@
 import { useNavigate } from "react-router-dom";
+import MainPicSwiper from "./MainPicSwiper";
 
 import GoUp from "../GoUp";
+import GoSite from "./GoSite";
+import ChallengesSolution from "./ChallengesSolution";
+import Functions from "./Functions";
+import Convention from "./Convention";
+
 // 디자인
 import "./subpage.scss";
-// 이미지
-import pinkSparkling from "../../assets/images/pink-sparkling.png";
-import GoSite from "./GoSite";
 
 function SubPage2() {
   const navi = useNavigate();
@@ -14,6 +17,7 @@ function SubPage2() {
     navi("/");
   };
   const path = process.env.PUBLIC_URL;
+
   return (
     <div className="subPage">
       <div className="wrapper sub1">
@@ -23,93 +27,77 @@ function SubPage2() {
               <path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z" />
             </svg>
           </button>
-          <div className="num">NUM 2</div>
+          <div className="num">NO. 2</div>
         </div>
 
-        {/* <div className="mainPic"></div> */}
+        <MainPicSwiper />
 
-        <section>
+        <h2>GRANHAND</h2>
+
+        <section className="section1">
           <div className="title">
-            <h2>title </h2>
-            <p>date</p>
-            <p>team</p>
+            <div className="aim">
+              <div className="aimTxt">
+                <h4 style={{ width: 500 }}>aim</h4>
+                <ol>
+                  <li>
+                    React로 쇼핑몰의 주요 기능
+                    <p style={{ textDecoration: "underline" }}>검색하기</p>
+                    <p style={{ textDecoration: "underline" }}>
+                      가격에 따른 상품 정렬
+                    </p>
+                    <p style={{ textDecoration: "underline" }}>
+                      회원가입 (join)
+                    </p>
+                    <p style={{ textDecoration: "underline" }}>
+                      장바구니 (cart)에 담기
+                    </p>
+                    <p style={{ textDecoration: "underline" }}>
+                      즐겨찾기 (wish list)에 담기
+                    </p>
+                    을 구현한다.
+                  </li>
+                </ol>
+              </div>
+            </div>
           </div>
 
-          <div className="myRole">
-            <h3>// My Role</h3>
-            <p></p>
-            <p></p>
+          <div className="skill">
+            <h4>function</h4>
+
+            <p>
+              UI: React <br />
+              디자인: SCSS
+            </p>
+            <p>라우터: Link, NavLink, Routes, Route, HashRouter</p>
+            <p>툴: GitHub, Visual Studio Code</p>
+            <p>데이터 요청 및 출력: Axios, JSON</p>
+          </div>
+        </section>
+        {/* 
+        <section className="section2">
+          <h3>convention</h3>
+          <div className="conventionWrapper"></div>
+        </section> */}
+
+        <section className="section3">
+          <h3 className="subHeadline">page structure</h3>
+
+          <div className="description">
+            <figure className="structure">
+              <img src={path + "/images/portfolio/portFolioStructure1.png"} />
+              <img src={path + "/images/portfolio/portFolioStructure2.PNG"} />
+              <figcaption>디렉토리 구조</figcaption>
+            </figure>
+
+            <div className="functions">{/* <Functions /> */}</div>
           </div>
         </section>
 
-        <div className="challenges">
-          <h3 className=" subHeadline">
-            challenges
-            <img
-              src={pinkSparkling}
-              alt="핑크색 빤작이"
-              className="pinkSparkling"
-            />
-          </h3>
-          <ul>
-            <li>
-              것은 품고 고행을 별과 풍부하게 뜨거운지라, 많이 황금시대를 듣는다.
-              힘차게 우리 위하여서, 주는 구할 이상, 칼이다. 원질이 같이, 얼음에
-              수 황금시대다.
-            </li>
-            <li>
-              것은 품고 고행을 별과 풍부하게 뜨거운지라, 많이 황금시대를 듣는다.
-              힘차게 우리 위하여서, 주는 구할 이상, 칼이다. 원질이 같이, 얼음에
-              수 황금시대다.
-            </li>
-          </ul>
-        </div>
-
-        <div className="solution">
-          <h3 className=" subHeadline">
-            solution
-            <img
-              src={pinkSparkling}
-              alt="핑크색 빤작이"
-              className="pinkSparkling"
-            />
-          </h3>
-          <ul>
-            <li>
-              것은 품고 고행을 별과 풍부하게 뜨거운지라, 많이 황금시대를 듣는다.
-              힘차게 우리 위하여서, 주는 구할 이상, 칼이다. 원질이 같이, 얼음에
-              수 황금시대다.
-            </li>
-            <li>
-              것은 품고 고행을 별과 풍부하게 뜨거운지라, 많이 황금시대를 듣는다.
-              힘차게 우리 위하여서, 주는 구할 이상, 칼이다. 원질이 같이, 얼음에
-              수 황금시대다.
-            </li>
-          </ul>
-        </div>
-
-        <div className="learned">
-          <h3 className="subHeadline">
-            what i learned
-            <img
-              src={pinkSparkling}
-              alt="핑크색 빤작이"
-              className="pinkSparkling"
-            />
-          </h3>
-          <ol>
-            <li>
-              것은 품고 고행을 별과 풍부하게 뜨거운지라, 많이 황금시대를 듣는다.
-              힘차게 우리 위하여서, 주는 구할 이상, 칼이다. 원질이 같이, 얼음에
-              수 황금시대다.
-            </li>
-            <li>
-              것은 품고 고행을 별과 풍부하게 뜨거운지라, 많이 황금시대를 듣는다.
-              힘차게 우리 위하여서, 주는 구할 이상, 칼이다. 원질이 같이, 얼음에
-              수 황금시대다.
-            </li>
-          </ol>
-        </div>
+        <section className="section4">
+          <h4 className="subHeadline">challenges / solution</h4>
+          {/* <ChallengesSolution path={path} /> */}
+        </section>
 
         <GoSite />
       </div>

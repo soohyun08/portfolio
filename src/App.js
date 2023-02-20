@@ -12,7 +12,7 @@ import About from "./layout/About";
 // 서브페이지
 import SubPage1 from "./components/subPages/SubPage1";
 import SubPage2 from "./components/subPages/SubPage2";
-import SubPageJoinUs from "./components/subPages/SubPageJoinUs";
+
 // 페이지 찾을 수 없음
 import NotFoundPage from "./components/NotFoundPage";
 
@@ -52,7 +52,6 @@ function App() {
           }
         />
         <Route path="/sub2" element={<SubPage2 />} />
-        <Route path="/sub3" element={<SubPageJoinUs />} />
 
         <Route path="/about" element={<About />} />
 

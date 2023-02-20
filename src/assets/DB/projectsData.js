@@ -10,9 +10,9 @@ export default [
   },
   {
     id: 2,
-    name: "",
-    logoImg: "",
-    img: "",
+    name: "GRANHAND",
+    logoImg: "/images/granhand/granhandLogo.png",
+    img: "/images/granhand/granhand.PNG",
     device: " WEB ",
     tool: "React",
     team: "Personal project",

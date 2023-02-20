@@ -8,14 +8,17 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 import "./mainPicSwiper.scss";
 
+import GranhandswiperPic from "../../assets/DB/swiperPics";
+
 function MainPicSwiper() {
+  const path = process.env.PUBLIC_URL;
   return (
     <>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -25,10 +28,11 @@ function MainPicSwiper() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper mainPics"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        {GranhandswiperPic.map((item) => (
+          <SwiperSlide key={item.id}>
+            <img src={path + item.imgURL} alt={item.name} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
