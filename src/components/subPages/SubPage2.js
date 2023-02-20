@@ -70,8 +70,10 @@ function SubPage2() {
               디자인: SCSS
             </p>
             <p>라우터: Link, NavLink, Routes, Route, HashRouter</p>
+            <p>라이브러리: firebase, localStorage, </p>
             <p>툴: GitHub, Visual Studio Code</p>
             <p>데이터 요청 및 출력: Axios, JSON</p>
+            <p>자주 사용한 메서드: .map() , Link </p>
           </div>
         </section>
         {/* 
