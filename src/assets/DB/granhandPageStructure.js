@@ -34,7 +34,7 @@ const granhandPageStructure = [
     id: 5,
     name: "즐겨찾기 (wish list)",
     des1: "- Local Storage에 상품정보를 저장하고 위시리스트에 뿌려줌",
-    des2: "개별 삭제 가능",
+    des2: "- 개별 삭제 가능",
   },
 ];
 
