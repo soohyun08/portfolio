@@ -13,10 +13,7 @@ function ChallengesSolution({ challenges, path }) {
               <strong>Solution : </strong>
               {list.solution}
             </p>
-            <img
-              src={`${path}/images/portfolio/${list.imgUrl}`}
-              alt={list.title}
-            />
+            <img src={`${path}/images/${list.imgUrl}`} alt={list.title} />
           </li>
         );
       })}

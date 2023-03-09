@@ -106,21 +106,21 @@
     {
       "id": 1,
       "title": "Projects에서 상세페이지로 넘어갈 때, 모든 상세페이지가 첫 번째 상세페이지로 연결 됨",
-      "imgUrl": "paramsErr.png",
+      "imgUrl": "portfolio/paramsErr.png",
       "challenges": "상세페이지('Subpage1, Subpage2 등')를 Route, Params를 사용해서 'Projects'컴포넌트의 자식 컴포넌트로 연결했다. 그 결과 모든 상세페이지가 SubPage1로 연결되는 오류가 발생",
       "solution": "상세페이지는 헤더와 푸터 외 완전히 다른 구조의 페이지로 이동됨으로 자식 컴포넌트가 아닌 형제 컴포넌트로 연결"
     },
     {
       "id": 2,
       "title": "메뉴 탭을 클릭했을 때 active된 버튼의 색이 변하지 않음",
-      "imgUrl": "clickErr.PNG",
+      "imgUrl": "portfolio/clickErr.PNG",
       "challenges": "메뉴 탭의 'About Me'를 클릭했을 때, About 페이지로 이동하고 동시에 클릭한 버튼의 배경색이 변해야 함. 페이지는 정상적으로 이동했지만 동시에 바뀌어야하는 버튼 색이 2번 클릭을 해야 바뀌었다.",
       "solution": "오류의 원인을 결국 찾지 못해서 <NavLink>를 사용했고, 논리 연산자로 페이지 이동과 함께 네비게이션 버튼의 색이 변하도록 설정 함"
     },
     {
       "id": 3,
       "title": "Projects 페이지의 '프론트엔트 개발자' auto typing을 자바스크립트 코드로 구현하기",
-      "imgUrl": "autoTyping.PNG",
+      "imgUrl": "portfolio/autoTyping.PNG",
       "challenges": "자바스크립트 코트를 직접 작성해서 auto typing을 구현하려 했으나 여러 난관들이 있었다. textContent와 같은 자바스크립트 프로퍼티를 리액트에 적용할 수 없어서 고민이 되었고, 콘솔에 성공적으로 정용되었으나 원하는 글씨가 화면에 나타나지 않았다.",
       "solution": "결국 검색해서 리액트 훅을 사용. 자바스크립트 코드로 작성한 이펙트를 어떻게 리액트에 적용하는지 연습이 더 필요하다."
     }

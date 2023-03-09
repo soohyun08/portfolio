@@ -1,7 +1,7 @@
 import "./goSite.scss";
 
 function GoSite() {
-  const url = "http://localhost:3000/granhand#/";
+  const url = "";
   return (
     <div
       className="goSite cover"

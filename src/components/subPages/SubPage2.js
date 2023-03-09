@@ -1,11 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import MainPicSwiper from "./MainPicSwiper";
-
 import GoUp from "../GoUp";
-import GoSite from "./GoSite";
-import ChallengesSolution from "./ChallengesSolution";
+import functions from "../../assets/DB/granhandPageStructure";
+import challenges from "../../assets/DB/granhandCnS";
 import Functions from "./Functions";
-import Convention from "./Convention";
+import ChallengesSolution from "./ChallengesSolution";
 
 // 디자인
 import "./subpage.scss";
@@ -41,21 +40,21 @@ function SubPage2() {
                 <h4 style={{ width: 500 }}>aim</h4>
                 <ol>
                   <li>
-                    React로 쇼핑몰의 주요 기능
+                    React로 쇼핑몰의
                     <p style={{ textDecoration: "underline" }}>검색하기</p>
                     <p style={{ textDecoration: "underline" }}>
                       가격에 따른 상품 정렬
                     </p>
                     <p style={{ textDecoration: "underline" }}>
-                      회원가입 (join)
+                      회원가입(join)
                     </p>
                     <p style={{ textDecoration: "underline" }}>
-                      장바구니 (cart)에 담기
+                      장바구니(cart)에 담기
                     </p>
                     <p style={{ textDecoration: "underline" }}>
-                      즐겨찾기 (wish list)에 담기
+                      즐겨찾기(wish list)에 담기
                     </p>
-                    을 구현한다.
+                    페이지 기능을 구현한다.
                   </li>
                 </ol>
               </div>
@@ -87,21 +86,32 @@ function SubPage2() {
 
           <div className="description">
             <figure className="structure">
-              <img src={path + "/images/portfolio/portFolioStructure1.png"} />
-              <img src={path + "/images/portfolio/portFolioStructure2.PNG"} />
+              <img src={path + "/images/granhand/stracture.PNG"} />
               <figcaption>디렉토리 구조</figcaption>
             </figure>
 
-            <div className="functions">{/* <Functions /> */}</div>
+            <div className="functions">
+              <Functions functions={functions} />
+            </div>
           </div>
         </section>
 
         <section className="section4">
           <h4 className="subHeadline">challenges / solution</h4>
-          {/* <ChallengesSolution path={path} /> */}
+          <ChallengesSolution path={path} challenges={challenges} />
         </section>
 
-        <GoSite />
+        <div
+          className="goSite cover"
+          onClick={() => {
+            window.open("https://soohyun08.github.io/granhand/");
+          }}
+        >
+          <div className="goSite">
+            GO SEE THE SITE
+            <span className="material-symbols-outlined">exit_to_app</span>
+          </div>
+        </div>
       </div>
 
       <GoUp />

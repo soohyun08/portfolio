@@ -35,14 +35,6 @@ export default [
     tool: "JavaScript(ES6+)",
     team: "Team of 4 members",
   },
-  {
-    id: 5,
-    name: "JoinUs",
-    logoImg: "",
-    img: "",
-    device: "WEB",
-    tool: "React",
-    team: "Personal project",
-  },
-  //  { id: 4 , name:" JoinUs" , logoImg:"", img: "", device:"" , tool:"", team: "",},
+
+  //  { id: 5 , name:" JoinUs" , logoImg:"", img: "", device:"" , tool:"", team: "",},
 ];
