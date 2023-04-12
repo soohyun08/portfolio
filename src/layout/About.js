@@ -35,7 +35,16 @@ function About() {
                 <span>#몰입을_즐기는</span>
               </div>
 
-              <button className="connect">let's connect</button>
+              <button
+                className="connect"
+                onClick={() => {
+                  window.open(
+                    "https://github.com/soohyun08/resume2023/blob/main/resume.pdf"
+                  );
+                }}
+              >
+                let's connect
+              </button>
             </div>
           </div>
 
