@@ -86,7 +86,8 @@ function SubPage2() {
 
           <div className="description">
             <figure className="structure">
-              <img src={path + "/images/granhand/stracture.PNG"} />
+              <img src={path + "/images/granhand/stracture1.PNG"} />
+              <img src={path + "/images/granhand/stracture2.PNG"} />
               <figcaption>디렉토리 구조</figcaption>
             </figure>
 
