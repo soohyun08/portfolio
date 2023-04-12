@@ -10,7 +10,9 @@ function Footer() {
         <div
           className="resume"
           onClick={() => {
-            window.open(url);
+            window.open(
+              "https://github.com/soohyun08/resume2023/blob/main/resume.pdf"
+            );
           }}
         >
           RESUME
