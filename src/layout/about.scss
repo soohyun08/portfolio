@@ -16,10 +16,17 @@
     border-top: 1px solid #fff;
     display: flex;
     margin-bottom: 10vh;
-    img {
-      width: 240px;
-      height: 320px;
+    .imgWrapper {
+      width: 360px;
+      height: 270px;
       border: 1px solid #fff;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+      }
     }
     .txt {
       padding: 3vh 0 0 2vw;

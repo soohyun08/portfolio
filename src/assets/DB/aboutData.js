@@ -24,7 +24,7 @@ export default [
   },
   {
     id: 3,
-    name: "SPA Framework / Library React",
+    name: "SPA Framework / Library React / jQuery",
     des1: "- 컴포넌트 라이프 사이클에 대한 이해",
     des2: "- useState, useEffect, useRef, useNavigate, useParams 등의 Hook 활용",
     des3: "- 사용자 맞춤 Hook 제작",
@@ -32,6 +32,7 @@ export default [
     des5: "- Context API, Redux Toolkit으로 전역 상태 관리",
     des6: "- React-router-dom을 활용한 단일 웹페이지 제작",
     des7: "- GitHub로 직접 deploy",
+    des9: "- jQuery로 이벤트 등록, 스타일 설정",
   },
   {
     id: 4,

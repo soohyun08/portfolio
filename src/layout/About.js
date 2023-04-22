@@ -5,7 +5,7 @@ import data from "../assets/DB/aboutData";
 //디자인
 import "./about.scss";
 //이미지
-import img from "../assets/images/gallery2.jpg";
+import img from "../assets/images/gallery3.png";
 import pinkSparkling from "../assets/images/pink-sparkling.png";
 import GoUp from "../components/GoUp";
 
@@ -16,7 +16,10 @@ function About() {
       <div className="about">
         <div className="wrapper">
           <div className="intoduce">
-            <img src={img} alt="pic" />
+            <figure className="imgWrapper">
+              <img src={img} alt="pic" />
+            </figure>
+
             <div className="txt">
               <p>
                 우연히 디자인과 프론트앤드 개발의 매력을 알게 되었습니다.
