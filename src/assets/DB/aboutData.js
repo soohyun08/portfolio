@@ -6,7 +6,7 @@ export default [
     des2: "- 웹 표준과 접근성을 고려하여 시멘틱 태그를 이용한 마크업",
     des3: "- Flex, Grid, Position을 이용한 레이아웃 구현",
     des4: "- CSS Animation을 활용한 모션 구현",
-    des5: "- Media Query를 이용한 반응형 웹 제작 ",
+    des5: "- 미디어 쿼리를 이용한 반응형 웹 제작 ",
     des6: "- CSS, SCSS를 능숙하게 사용",
   },
   {

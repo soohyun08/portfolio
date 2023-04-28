@@ -82,7 +82,7 @@ function About() {
           <div className="contact">
             <h4>kim soohyun</h4>
             <h5>010-6481-0829</h5>
-            <h5>skim0829@outlook.com</h5>
+            <h5>soohyun.k@outlook.com</h5>
           </div>
         </div>
       </div>
