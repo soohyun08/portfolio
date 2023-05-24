@@ -106,7 +106,7 @@
     {
       "id": 1,
       "title": "Projects에서 상세페이지로 넘어갈 때, 모든 상세페이지가 첫 번째 상세페이지로 연결 됨",
-      "imgUrl": "portfolio/paramsErr.png",
+      "imgUrl": "portfolio/paramsErr.PNG",
       "challenges": "상세페이지('Subpage1, Subpage2 등')를 Route, Params를 사용해서 'Projects'컴포넌트의 자식 컴포넌트로 연결했다. 그 결과 모든 상세페이지가 SubPage1로 연결되는 오류가 발생",
       "solution": "상세페이지는 헤더와 푸터 외 완전히 다른 구조의 페이지로 이동됨으로 자식 컴포넌트가 아닌 형제 컴포넌트로 연결"
     },
